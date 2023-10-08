@@ -387,7 +387,7 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(
-            vertical: 4,
+            vertical: 20,
           ),
           decoration: BoxDecoration(
               borderRadius: widget.itemSelectedBorder,
