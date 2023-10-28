@@ -263,6 +263,11 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           widget.header != null ? _buildCustomHeader() : _buildIconTextHeader(),
+          Container(
+            margin: const EdgeInsets.only(top: 16, bottom: 24),
+            height: 1,
+            //color: Colors.grey,
+          ),
           Expanded(
             child: LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
@@ -298,7 +303,7 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
   Widget _buildIconTextHeader() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: _calculateHeaderItemOffset()),
-      height: 100,
+      height: 40,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
@@ -381,12 +386,10 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
       onExit: (_) => _setExitHover(),
       child: GestureDetector(
         child: Container(
-          //height: 100,
+          height: 100,
           width: double.infinity,
-          padding: const EdgeInsets.only(
-            top: 5,
-            bottom: 5,
-            left: 10
+          padding: const EdgeInsets.symmetric(
+            vertical: 5,
           ),
           decoration: BoxDecoration(
               borderRadius: widget.itemSelectedBorder,
