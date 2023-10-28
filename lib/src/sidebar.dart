@@ -257,8 +257,6 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
 
   Widget _buildChild() {
     return Container(
-      color: Colors.red,
-      
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(widget.itemMargin),
       child: Column(
@@ -391,7 +389,7 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
           height: 100,
           width: double.infinity,
           padding: const EdgeInsets.symmetric(
-            vertical: 20,
+            vertical: 5,
           ),
           decoration: BoxDecoration(
               borderRadius: widget.itemSelectedBorder,
