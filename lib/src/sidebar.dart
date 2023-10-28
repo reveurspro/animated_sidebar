@@ -385,12 +385,12 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
       onExit: (_) => _setExitHover(),
       child: GestureDetector(
         child: Container(
+          margin: EdgeInsets.only(left: 10),
           height: 40,
           width: double.infinity,
           padding: const EdgeInsets.only(
             top: 5,
             bottom: 5,
-            left: 10
           ),
           decoration: BoxDecoration(
               borderRadius: widget.itemSelectedBorder,
