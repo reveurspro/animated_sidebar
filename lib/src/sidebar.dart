@@ -257,7 +257,6 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
 
   Widget _buildChild() {
     return Container(
-      padding: EdgeInsets.all(10),
       margin: EdgeInsets.all(widget.itemMargin),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
