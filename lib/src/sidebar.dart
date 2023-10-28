@@ -263,11 +263,6 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           widget.header != null ? _buildCustomHeader() : _buildIconTextHeader(),
-          Container(
-            margin: const EdgeInsets.only(top: 16, bottom: 24),
-            height: 1,
-            color: Colors.grey,
-          ),
           Expanded(
             child: LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
@@ -388,8 +383,10 @@ class _AnimatedSidebarState extends State<AnimatedSidebar>
         child: Container(
           height: 100,
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(
-            vertical: 5,
+          padding: const EdgeInsets.only(
+            top: 5,
+            bottom: 5,
+            left: 10
           ),
           decoration: BoxDecoration(
               borderRadius: widget.itemSelectedBorder,
